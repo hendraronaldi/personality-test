@@ -1,5 +1,5 @@
 {
-    "user": [
+    "biodata": [
         {
             "label": "Nama Lengkap",
             "type": "text"
