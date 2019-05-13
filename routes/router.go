@@ -38,6 +38,7 @@ func viewHTMLRouter(router *gin.Engine) {
 	// router.Static("/static", "./view")
 	// router.StaticFile("/sw.js", "view/sw.js")
 	router.Static("/assets", "view/assets")
+	router.Static("/scripts", "view/scripts")
 	// router.Static("/public", "view/public")
 
 	router.GET("/", func(c *gin.Context) {
