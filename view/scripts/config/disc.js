@@ -1,529 +1,529 @@
 export default
 [
     {
-        "text": "1",
+        "name": "1",
         "type": "radio",
         "options": [
             {
-                "text": "Restrained",
+                "name": "Restrained",
                 "value": "s"
             },
             {
-                "text": "Forceful",
+                "name": "Forceful",
                 "value": "d"
             },
             {
-                "text": "Careful",
+                "name": "Careful",
                 "value": "c"
             },
             {
-                "text": "Expressive",
+                "name": "Expressive",
                 "value": "i"
             }
         ]
     },
     {
-        "text": "2",
+        "name": "2",
         "type": "radio",
         "options": [
             {
-                "text": "Pioneering",
+                "name": "Pioneering",
                 "value": "d"
             },
             {
-                "text": "Correct",
+                "name": "Correct",
                 "value": "c"
             },
             {
-                "text": "Exciting",
+                "name": "Exciting",
                 "value": "i"
             },
             {
-                "text": "Satisfied",
+                "name": "Satisfied",
                 "value": "s"
             }
         ]
     },
     {
-        "text": "3",
+        "name": "3",
         "type": "radio",
         "options": [
             {
-                "text": "Willing",
+                "name": "Willing",
                 "value": "s"
             },
             {
-                "text": "Animated",
+                "name": "Animated",
                 "value": "i"
             },
             {
-                "text": "Bold",
+                "name": "Bold",
                 "value": "d"
             },
             {
-                "text": "Precise",
+                "name": "Precise",
                 "value": "c"
             }
         ]
     },
     {
-        "text": "4",
+        "name": "4",
         "type": "radio",
         "options": [
             {
-                "text": "Argumentative",
+                "name": "Argumentative",
                 "value": "d"
             },
             {
-                "text": "Doubting",
+                "name": "Doubting",
                 "value": "c"
             },
             {
-                "text": "Indecisive",
+                "name": "Indecisive",
                 "value": "s"
             },
             {
-                "text": "Unpredictable",
+                "name": "Unpredictable",
                 "value": "i"
             }
         ]
     },
     {
-        "text": "5",
+        "name": "5",
         "type": "radio",
         "options": [
             {
-                "text": "Respectful",
+                "name": "Respectful",
                 "value": "c"
             },
             {
-                "text": "Out-going",
+                "name": "Out-going",
                 "value": "i"
             },
             {
-                "text": "Patient",
+                "name": "Patient",
                 "value": "s"
             },
             {
-                "text": "Daring",
+                "name": "Daring",
                 "value": "d"
             }
         ]
     },
     {
-        "text": "6",
+        "name": "6",
         "type": "radio",
         "options": [
             {
-                "text": "Persuasive",
+                "name": "Persuasive",
                 "value": "i"
             },
             {
-                "text": "Self-reliant",
+                "name": "Self-reliant",
                 "value": "d"
             },
             {
-                "text": "Logical",
+                "name": "Logical",
                 "value": "c"
             },
             {
-                "text": "Gentle",
+                "name": "Gentle",
                 "value": "s"
             }
         ]
     },
     {
-        "text": "7",
+        "name": "7",
         "type": "radio",
         "options": [
             {
-                "text": "Cautious",
+                "name": "Cautious",
                 "value": "c"
             },
             {
-                "text": "Even-tempered",
+                "name": "Even-tempered",
                 "value": "s"
             },
             {
-                "text": "Decisive",
+                "name": "Decisive",
                 "value": "d"
             },
             {
-                "text": "Life-of-the-party",
+                "name": "Life-of-the-party",
                 "value": "i"
             }
         ]
     },
     {
-        "text": "8",
+        "name": "8",
         "type": "radio",
         "options": [
             {
-                "text": "Popular",
+                "name": "Popular",
                 "value": "i"
             },
             {
-                "text": "Assertive",
+                "name": "Assertive",
                 "value": "d"
             },
             {
-                "text": "Perfectionist",
+                "name": "Perfectionist",
                 "value": "c"
             },
             {
-                "text": "Generous",
+                "name": "Generous",
                 "value": "s"
             }
         ]
     },
     {
-        "text": "9",
+        "name": "9",
         "type": "radio",
         "options": [
             {
-                "text": "Colorful",
+                "name": "Colorful",
                 "value": "i"
             },
             {
-                "text": "Modest",
+                "name": "Modest",
                 "value": "c"
             },
             {
-                "text": "Easy-going",
+                "name": "Easy-going",
                 "value": "s"
             },
             {
-                "text": "Unyielding",
+                "name": "Unyielding",
                 "value": "d"
             }
         ]
     },
     {
-        "text": "10",
+        "name": "10",
         "type": "radio",
         "options": [
             {
-                "text": "Systematic",
+                "name": "Systematic",
                 "value": "c"
             },
             {
-                "text": "Optimistic",
+                "name": "Optimistic",
                 "value": "i"
             },
             {
-                "text": "Persistent",
+                "name": "Persistent",
                 "value": "d"
             },
             {
-                "text": "Accommodating",
+                "name": "Accommodating",
                 "value": "s"
             }
         ]
     },
     {
-        "text": "11",
+        "name": "11",
         "type": "radio",
         "options": [
             {
-                "text": "Relentless",
+                "name": "Relentless",
                 "value": "d"
             },
             {
-                "text": "Humble",
+                "name": "Humble",
                 "value": "c"
             },
             {
-                "text": "Neighborly",
+                "name": "Neighborly",
                 "value": "s"
             },
             {
-                "text": "Talkative",
+                "name": "Talkative",
                 "value": "i"
             }
         ]
     },
     {
-        "text": "12",
+        "name": "12",
         "type": "radio",
         "options": [
             {
-                "text": "Friendly",
+                "name": "Friendly",
                 "value": "s"
             },
             {
-                "text": "Observant",
+                "name": "Observant",
                 "value": "c"
             },
             {
-                "text": "Playful",
+                "name": "Playful",
                 "value": "i"
             },
             {
-                "text": "Strong-willed",
+                "name": "Strong-willed",
                 "value": "d"
             }
         ]
     },
     {
-        "text": "13",
+        "name": "13",
         "type": "radio",
         "options": [
             {
-                "text": "Charming",
+                "name": "Charming",
                 "value": "i"
             },
             {
-                "text": "Adventurous",
+                "name": "Adventurous",
                 "value": "d"
             },
             {
-                "text": "Disciplined",
+                "name": "Disciplined",
                 "value": "c"
             },
             {
-                "text": "Deliberate",
+                "name": "Deliberate",
                 "value": "s"
             }
         ]
     },
     {
-        "text": "14",
+        "name": "14",
         "type": "radio",
         "options": [
             {
-                "text": "Restrained",
+                "name": "Restrained",
                 "value": "c"
             },
             {
-                "text": "Steady",
+                "name": "Steady",
                 "value": "s"
             },
             {
-                "text": "Aggressive",
+                "name": "Aggressive",
                 "value": "d"
             },
             {
-                "text": "Attractive",
+                "name": "Attractive",
                 "value": "i"
             }
         ]
     },
     {
-        "text": "15",
+        "name": "15",
         "type": "radio",
         "options": [
             {
-                "text": "Enthusiastic",
+                "name": "Enthusiastic",
                 "value": "i"
             },
             {
-                "text": "Analytical",
+                "name": "Analytical",
                 "value": "c"
             },
             {
-                "text": "Sympathetic",
+                "name": "Sympathetic",
                 "value": "s"
             },
             {
-                "text": "Determined",
+                "name": "Determined",
                 "value": "d"
             }
         ]
     },
     {
-        "text": "16",
+        "name": "16",
         "type": "radio",
         "options": [
             {
-                "text": "Commanding",
+                "name": "Commanding",
                 "value": "d"
             },
             {
-                "text": "Impulsive",
+                "name": "Impulsive",
                 "value": "i"
             },
             {
-                "text": "Slow-paced",
+                "name": "Slow-paced",
                 "value": "s"
             },
             {
-                "text": "Critical",
+                "name": "Critical",
                 "value": "c"
             }
         ]
     },
     {
-        "text": "17",
+        "name": "17",
         "type": "radio",
         "options": [
             {
-                "text": "Consistent",
+                "name": "Consistent",
                 "value": "c"
             },
             {
-                "text": "Force-of-character",
+                "name": "Force-of-character",
                 "value": "d"
             },
             {
-                "text": "Lively",
+                "name": "Lively",
                 "value": "i"
             },
             {
-                "text": "Laid-back",
+                "name": "Laid-back",
                 "value": "s"
             }
         ]
     },
     {
-        "text": "18",
+        "name": "18",
         "type": "radio",
         "options": [
             {
-                "text": "Influential",
+                "name": "Influential",
                 "value": "i"
             },
             {
-                "text": "Kind",
+                "name": "Kind",
                 "value": "s"
             },
             {
-                "text": "Independent",
+                "name": "Independent",
                 "value": "d"
             },
             {
-                "text": "Orderly",
+                "name": "Orderly",
                 "value": "c"
             }
         ]
     },
     {
-        "text": "19",
+        "name": "19",
         "type": "radio",
         "options": [
             {
-                "text": "Idealistic",
+                "name": "Idealistic",
                 "value": "c"
             },
             {
-                "text": "Popular",
+                "name": "Popular",
                 "value": "i"
             },
             {
-                "text": "Pleasant",
+                "name": "Pleasant",
                 "value": "s"
             },
             {
-                "text": "Out-spoken",
+                "name": "Out-spoken",
                 "value": "d"
             }
         ]
     },
     {
-        "text": "20",
+        "name": "20",
         "type": "radio",
         "options": [
             {
-                "text": "Impatient",
+                "name": "Impatient",
                 "value": "d"
             },
             {
-                "text": "Serious",
+                "name": "Serious",
                 "value": "c"
             },
             {
-                "text": "Procrastinator",
+                "name": "Procrastinator",
                 "value": "s"
             },
             {
-                "text": "Emotional",
+                "name": "Emotional",
                 "value": "i"
             }
         ]
     },
     {
-        "text": "21",
+        "name": "21",
         "type": "radio",
         "options": [
             {
-                "text": "Competitive",
+                "name": "Competitive",
                 "value": "d"
             },
             {
-                "text": "Spontaneous",
+                "name": "Spontaneous",
                 "value": "i"
             },
             {
-                "text": "Loyal",
+                "name": "Loyal",
                 "value": "s"
             },
             {
-                "text": "Thoughtful",
+                "name": "Thoughtful",
                 "value": "c"
             }
         ]
     },
     {
-        "text": "22",
+        "name": "22",
         "type": "radio",
         "options": [
             {
-                "text": "Self-sacrificing",
+                "name": "Self-sacrificing",
                 "value": "c"
             },
             {
-                "text": "Considerate",
+                "name": "Considerate",
                 "value": "s"
             },
             {
-                "text": "Convincing",
+                "name": "Convincing",
                 "value": "i"
             },
             {
-                "text": "Courageous",
+                "name": "Courageous",
                 "value": "d"
             }
         ]
     },
     {
-        "text": "23",
+        "name": "23",
         "type": "radio",
         "options": [
             {
-                "text": "Dependent",
+                "name": "Dependent",
                 "value": "s"
             },
             {
-                "text": "Flighty",
+                "name": "Flighty",
                 "value": "i"
             },
             {
-                "text": "Stoic",
+                "name": "Stoic",
                 "value": "c"
             },
             {
-                "text": "Pushy",
+                "name": "Pushy",
                 "value": "d"
             }
         ]
     },
     {
-        "text": "24",
+        "name": "24",
         "type": "radio",
         "options": [
             {
-                "text": "Tolerant",
+                "name": "Tolerant",
                 "value": "s"
             },
             {
-                "text": "Conventional",
+                "name": "Conventional",
                 "value": "c"
             },
             {
-                "text": "Stimulating",
+                "name": "Stimulating",
                 "value": "i"
             },
             {
-                "text": "Directing",
+                "name": "Directing",
                 "value": "d"
             }
         ]
