@@ -3,6 +3,7 @@ package routes
 import (
 	"fmt"
 	"time"
+	"work/personality-test/modules/controller"
 
 	"github.com/gin-gonic/gin"
 )
@@ -29,7 +30,11 @@ func CORSMiddleware() gin.HandlerFunc {
 
 func SetupRouter(router *gin.Engine) {
 	viewHTMLRouter(router)
-	environmentVariableSettings(router)
+	PersonalityRouter(router)
+}
+
+func PersonalityRouter(router *gin.Engine) {
+	router.POST("/personality", controller.SavePersonality)
 }
 
 func viewHTMLRouter(router *gin.Engine) {
@@ -46,8 +51,4 @@ func viewHTMLRouter(router *gin.Engine) {
 			"timestamp": time.Now().Unix(),
 		})
 	})
-}
-
-func environmentVariableSettings(router *gin.Engine) {
-	// router.GET("/env", connection.GetFirebaseEnvironmentVariable)
 }
