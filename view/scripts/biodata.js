@@ -17,7 +17,7 @@ export function biodataTemplate() {
         <div class="card-header text-center">
             <h1>Biodata</h1>
         </div>
-        <div id="biodata" class="card-body">
+        <div id="biodata" class="card-body" style="text-align:left;">
         </div>
         <div class="card-footer text-center">
             <input type="submit" class="btn btn-primary btn-round btn-lg btn-block" value="Next" />
@@ -25,11 +25,20 @@ export function biodataTemplate() {
     </form>`);
 
     biodata.forEach((field) => {
-        $('#biodata').append(
-            `<div class="input-group no-border input-lg">
-                <input name="`+field.name+`" type="`+field.type+`" class="form-control" placeholder="`+field.label+`" required>
-            </div>`
-        );
+        if(field.type == "date"){
+            $('#biodata').append(
+                `<label style="padding-left:10px;">Tanggal Lahir</label>
+                <div class="input-group no-border input-lg">
+                    <input name="`+field.name+`" type="`+field.type+`" class="form-control" placeholder="`+field.label+`" required>
+                </div><br/>`
+            );
+        }else{
+            $('#biodata').append(
+                `<div class="input-group no-border input-lg">
+                    <input name="`+field.name+`" type="`+field.type+`" class="form-control" placeholder="`+field.label+`" required>
+                </div><br/>`
+            );
+        }
     })
 }
 
