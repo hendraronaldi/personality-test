@@ -1,8 +1,13 @@
 import disc from './config/disc.js';
-
+import { addRiasecTemplate } from './formController.js';
 var userDisc;
 
-function discTemplate() {
+export function getUserDisc() {
+    return userDisc;
+}
+
+export function discTemplate() {
+    $("#card-form").empty();
     $("#card-form").append(`<form id="form-disc" class="form">
         <div class="card-header text-center">
             <h1>DISC Personality Test</h1>
@@ -10,7 +15,7 @@ function discTemplate() {
         <div id="disc" class="card-body" style="overflow:scroll; height:400px;">
         </div>
         <div class="card-footer text-center">
-            <input type="submit" class="btn btn-primary btn-round btn-lg btn-block" value="Submit" />
+            <input type="submit" class="btn btn-primary btn-round btn-lg btn-block" value="Next" />
         </div>
     </form>`);
 
@@ -32,15 +37,10 @@ function discTemplate() {
     })
 }
 
-function saveDisc() {
+export function saveDisc() {
     $("#form-disc").submit(function(e){
         userDisc = $("#form-disc").serializeArray();
-        
+        addRiasecTemplate();
         e.preventDefault();
     });
 }
-
-$(document).ready(function(){
-    discTemplate();
-    saveDisc();
-});
