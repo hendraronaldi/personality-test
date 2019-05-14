@@ -30,7 +30,6 @@ function riasecTemplate() {
 function saveRiasec() {
     $("#form-riasec").submit(function(e){
         userRiasec = $("#form-riasec").serializeArray();
-        console.log(userRiasec);
         e.preventDefault();
     });
 }
