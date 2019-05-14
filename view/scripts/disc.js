@@ -3,16 +3,20 @@ import { addRiasecTemplate } from './formController.js';
 var userDisc;
 
 export function getUserDisc() {
-    return userDisc;
+    var data = {}
+    userDisc.forEach((field) => {
+        data[field.name] = field.value;
+    })
+    return data;
 }
 
 export function discTemplate() {
     $("#card-form").empty();
     $("#card-form").append(`<form id="form-disc" class="form">
         <div class="card-header text-center">
-            <h1>DISC Personality Test</h1>
+            <h5>In every number, please choose the most fitted answer which describes yourself</h5>
         </div>
-        <div id="disc" class="card-body" style="overflow:scroll; height:400px;">
+        <div id="disc" class="card-body" style="overflow:scroll; height:400px; text-align:left;">
         </div>
         <div class="card-footer text-center">
             <input type="submit" class="btn btn-primary btn-round btn-lg btn-block" value="Next" />
@@ -32,7 +36,7 @@ export function discTemplate() {
             </div>`
             }
         );
-        question += '<br/><br/>';
+        question += '<br/><hr/><br/>';
         $('#disc').append(question);
     })
 }

@@ -1,6 +1,7 @@
 import { biodataTemplate, saveBiodata, getUserBiodata } from "./biodata.js";
 import { discTemplate, saveDisc, getUserDisc } from "./disc.js";
 import { riasecTemplate, saveRiasec, getUserRiasec } from "./riasec.js";
+import { mbtiTemplate, saveMbti } from "./mbti.js";
 
 export function addBiodataTemplate(){
     biodataTemplate();
@@ -17,11 +18,17 @@ export function addRiasecTemplate(){
     saveRiasec();
 }
 
+export function addMbtiTemplate(){
+    mbtiTemplate();
+    saveMbti();
+}
+
 export function saveResult() {
     var result = {
-        user: getUserBiodata()
-        // 'disc': getUserDisc(),
-        // 'riasec': getUserRiasec()
+        user: getUserBiodata(),
+        disc: getUserDisc(),
+        riasec: getUserRiasec(),
+        mbti: getUserMbti()
     }
 
     $.ajax({
@@ -31,7 +38,8 @@ export function saveResult() {
         contentType: 'application/json; charset=UTF-8',
         data: JSON.stringify(result),
         success: function( data, textStatus, jQxhr ){
-            alert(textStatus);
+            alert("Your data has been saved. Thanks a lot for your participation.");
+            location.reload();
         },
         error: function( jqXhr, textStatus, errorThrown ){
             alert("Error");
@@ -41,4 +49,7 @@ export function saveResult() {
 
 $(document).ready(function(){
     addBiodataTemplate();
+    // addDiscTemplate();
+    // addRiasecTemplate();
+    // addMbtiTemplate();
 });

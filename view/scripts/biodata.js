@@ -4,7 +4,11 @@ import { addDiscTemplate } from './formController.js';
 var userBiodata;
 
 export function getUserBiodata() {
-    return userBiodata;
+    var data = {}
+    userBiodata.forEach((field) => {
+        data[field.name] = field.value;
+    })
+    return data;
 }
 
 export function biodataTemplate() {

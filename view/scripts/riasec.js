@@ -1,19 +1,23 @@
 import riasec from './config/riasec.js';
-import { saveResult } from './formController.js';
+import { addMbtiTemplate } from './formController.js';
 
 var userRiasec;
 
 export function getUserRiasec() {
-    return userRiasec;
+    var data = {}
+    userRiasec.forEach((field) => {
+        data[field.name] = field.value;
+    })
+    return data;
 }
 
 export function riasecTemplate() {
     $("#card-form").empty();
     $("#card-form").append(`<form id="form-riasec" class="form">
         <div class="card-header text-center">
-            <h1>RIASEC Personality Test</h1>
+        <h5>Please choose the options which are fitted to describe yourself</h5>
         </div>
-        <div id="riasec" class="card-body" style="overflow:scroll; height:400px;">
+        <div id="riasec" class="card-body" style="overflow:scroll; height:400px; text-align:left;">
         </div>
         <div class="card-footer text-center">
             <input type="submit" class="btn btn-primary btn-round btn-lg btn-block" value="Next" />
@@ -36,7 +40,7 @@ export function riasecTemplate() {
 export function saveRiasec() {
     $("#form-riasec").submit(function(e){
         userRiasec = $("#form-riasec").serializeArray();
-        saveResult();
+        addMbtiTemplate();
         e.preventDefault();
     });
 }
