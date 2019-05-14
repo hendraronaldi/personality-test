@@ -27,5 +27,9 @@ func StartGin() {
 
 	router.Use(routes.CORSMiddleware())
 	routes.SetupRouter(router)
-	router.Run(":8000") //port for localhost:8000
+	if os.Getenv("port") == "default" {
+		router.Run()
+	} else {
+		router.Run(":8000") //port for localhost:8000
+	}
 }
