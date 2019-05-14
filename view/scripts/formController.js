@@ -18,18 +18,20 @@ export function addRiasecTemplate(){
 }
 
 export function saveResult() {
+    var result = {
+        user: getUserBiodata()
+        // 'disc': getUserDisc(),
+        // 'riasec': getUserRiasec()
+    }
+
     $.ajax({
-        url: '',
-        dataType: 'text',
-        type: 'post',
-        contentType: 'application/x-www-form-urlencoded',
-        data: {
-            user: getUserBiodata(),
-            disc: getUserDisc(),
-            riasec: getUserRiasec()
-        },
+        url: '/personality',
+        dataType: 'json',
+        type: 'POST',
+        contentType: 'application/json; charset=UTF-8',
+        data: JSON.stringify(result),
         success: function( data, textStatus, jQxhr ){
-            alert("Sucessful");
+            alert(textStatus);
         },
         error: function( jqXhr, textStatus, errorThrown ){
             alert("Error");
