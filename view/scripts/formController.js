@@ -1,7 +1,7 @@
 import { biodataTemplate, saveBiodata, getUserBiodata } from "./biodata.js";
 import { discTemplate, saveDisc, getUserDisc } from "./disc.js";
 import { riasecTemplate, saveRiasec, getUserRiasec } from "./riasec.js";
-import { mbtiTemplate, saveMbti } from "./mbti.js";
+import { mbtiTemplate, saveMbti, getUserMbti } from "./mbti.js";
 
 export function addBiodataTemplate(){
     biodataTemplate();
