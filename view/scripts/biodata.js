@@ -20,7 +20,7 @@ export function biodataTemplate() {
         <div id="biodata" class="card-body" style="text-align:left;">
         </div>
         <div class="card-footer text-center">
-            <input type="submit" class="btn btn-primary btn-round btn-lg btn-block" value="Next" />
+            <input type="submit" class="btn btn-info btn-round btn-lg btn-block" value="Next" />
         </div>
     </form>`);
 

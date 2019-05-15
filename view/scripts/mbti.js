@@ -19,7 +19,7 @@ export function mbtiTemplate() {
         <div id="mbti" class="card-body" style="overflow:scroll; height:400px; text-align:left;">
         </div>
         <div class="card-footer text-center">
-            <input type="submit" class="btn btn-primary btn-round btn-lg btn-block" value="Submit" />
+            <input type="submit" class="btn btn-success btn-round btn-lg btn-block" value="Submit" />
         </div>
     </form>`);
 
