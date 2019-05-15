@@ -27,7 +27,7 @@ export function riasecTemplate() {
     riasec.forEach((field, index) => {
         $('#riasec').append(`<div class="form-check">
             <label class="form-check-label">
-                <input class="form-check-input" type="checkbox" name="`+index+1+`" value="`+field.value+`">
+                <input class="form-check-input" type="checkbox" name="`+(parseInt(index, 10)+1)+`" value="`+field.value+`">
                 `+field.text+`
                 <span class="form-check-sign">
                     <span class="check"></span>
