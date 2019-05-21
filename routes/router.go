@@ -35,6 +35,8 @@ func SetupRouter(router *gin.Engine) {
 
 func PersonalityRouter(router *gin.Engine) {
 	router.POST("/personality", controller.SavePersonality)
+	router.POST("/discData", controller.GetUserDISC)
+	router.POST("/discLeast", controller.SaveDISCLeastResult)
 }
 
 func viewHTMLRouter(router *gin.Engine) {
