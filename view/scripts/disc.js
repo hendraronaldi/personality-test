@@ -1,5 +1,5 @@
 import disc from './config/disc.js';
-import { addRiasecTemplate } from './formController.js';
+import { addDiscLeastTemplate } from './formController.js';
 var userDisc;
 
 export function getUserDisc() {
@@ -44,7 +44,7 @@ export function discTemplate() {
 export function saveDisc() {
     $("#form-disc").submit(function(e){
         userDisc = $("#form-disc").serializeArray();
-        addRiasecTemplate();
+        addDiscLeastTemplate();
         e.preventDefault();
     });
 }
