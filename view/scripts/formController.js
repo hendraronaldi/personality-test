@@ -14,9 +14,9 @@ export function addDiscTemplate(){
     saveDisc();
 }
 
-export function addDiscLeastTemplate(){
-    discLeastTemplate();
-    saveDiscLeast();
+export function addDiscLeastTemplate(userDisc){
+    discLeastTemplate(userDisc);
+    saveDiscLeast(userDisc);
 }
 
 export function addRiasecTemplate(){

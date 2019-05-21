@@ -1,9 +1,6 @@
 import disc from './config/disc.js';
-import { addRiasecTemplate, saveResult } from './formController.js';
-import { getUserDisc } from './disc.js';
-var userDiscLeast;
 
-export function getUserDiscLeast() {
+export function getUserDiscLeast(userDiscLeast) {
     var data = {}
     userDiscLeast.forEach((field) => {
         data[field.name] = field.value;
@@ -11,7 +8,7 @@ export function getUserDiscLeast() {
     return data;
 }
 
-export function discLeastTemplate() {
+export function discLeastTemplate(userDisc) {
     $("#card-form").empty();
     $("#card-form").append(`<form id="form-disc-least" class="form">
         <div class="card-header text-center">
@@ -20,12 +17,11 @@ export function discLeastTemplate() {
         <div id="disc-least" class="card-body" style="overflow:scroll; height:400px; text-align:left;">
         </div>
         <div class="card-footer text-center">
-            <input type="submit" class="btn btn-info btn-round btn-lg btn-block" value="Next" />
+            <input type="submit" class="btn btn-success btn-round btn-lg btn-block" value="Submit" />
         </div>
     </form>`);
 
     disc.forEach((field) => {
-        var userDisc = getUserDisc();
         var question = `<p>`+field.name+`</p>`;
         var question;
         field.options.forEach((option) => {
@@ -45,10 +41,27 @@ export function discLeastTemplate() {
     })
 }
 
-export function saveDiscLeast() {
+export function saveDiscLeast(userDisc) {
     $("#form-disc-least").submit(function(e){
-        userDiscLeast = $("#form-disc-least").serializeArray();
-        addRiasecTemplate();
+        var userDiscLeast = $("#form-disc-least").serializeArray();
+        var discLeastData = getUserDiscLeast(userDiscLeast);
+        var data = {};
+        data["discLeast"] = discLeastData;
+        data["id"] = userDisc["id"];
+        $.ajax({
+            url: '/discLeast',
+            dataType: 'json',
+            type: 'POST',
+            contentType: 'application/json; charset=UTF-8',
+            data: JSON.stringify(data),
+            success: function( data, textStatus, jQxhr ){
+                alert("Your data has been saved. Thanks a lot for your participation.");
+                location.reload();
+            },
+            error: function( jqXhr, textStatus, errorThrown ){
+                alert("Error");
+            }
+        });
         e.preventDefault();
     });
 }
