@@ -1,5 +1,6 @@
 import { biodataTemplate, saveBiodata, getUserBiodata } from "./biodata.js";
 import { discTemplate, saveDisc, getUserDisc } from "./disc.js";
+import { discLeastTemplate, saveDiscLeast, getUserDiscLeast } from "./discLeast.js";
 import { riasecTemplate, saveRiasec, getUserRiasec } from "./riasec.js";
 import { mbtiTemplate, saveMbti, getUserMbti } from "./mbti.js";
 
@@ -11,6 +12,11 @@ export function addBiodataTemplate(){
 export function addDiscTemplate(){
     discTemplate();
     saveDisc();
+}
+
+export function addDiscLeastTemplate(){
+    discLeastTemplate();
+    saveDiscLeast();
 }
 
 export function addRiasecTemplate(){
@@ -27,6 +33,7 @@ export function saveResult() {
     var result = {
         user: getUserBiodata(),
         disc: getUserDisc(),
+        discLeast: getUserDiscLeast(),
         riasec: getUserRiasec(),
         mbti: getUserMbti()
     }
@@ -50,6 +57,7 @@ export function saveResult() {
 $(document).ready(function(){
     addBiodataTemplate();
     // addDiscTemplate();
+    // addDiscLeastTemplate();
     // addRiasecTemplate();
     // addMbtiTemplate();
 });
